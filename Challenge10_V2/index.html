@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FontTester</title>
+  </head>
+  <body>
+    <section class="options">
+      <h1>Font Tester</h1>
+
+      <div class="option">
+        <label>Text</label>
+        <input type="text" name="text" placeholder="The quick brown fox..." />
+      </div>
+
+      <div class="option">
+        <label>Typeface</label>
+        <select name="typeface">
+          <option value="NeueMontreal">Neue Montreal</option>
+          <option value="Bitter">Bitter</option>
+          <option value="Fira Sans">Fira Sans</option>
+          <option value="Noto Serif Display">Noto Serif</option>
+          <option value="Poppins">Poppins</option>
+        </select>
+      </div>
+
+      <div class="option">
+        <label>Font Size <span class="sizelabel">64px</span></label>
+        <input type="range" name="size" min="6" max="160" value="64" />
+      </div>
+
+      <div class="option">
+        <label>Font Weight <span class="weightLabel">400</span></label>
+        <input
+          type="range"
+          name="weight"
+          min="100"
+          max="900"
+          value="400"
+          step="100"
+        />
+      </div>
+
+      <div class="option">
+        <label>Leading <span class="leadinglabel">1.5</span></label>
+        <input
+          type="range"
+          name="leading"
+          min="0.75"
+          max="2.5"
+          value="1.5"
+          step=".1"
+        />
+      </div>
+
+      <div class="option checkbox">
+        <label>Italic</label>
+        <input type="checkbox" name="italic" />
+      </div>
+
+      <div class="option">
+        <label>Colors</label>
+        <div class="colors">
+          <div class="color" style="background-color: #2a2a2a; color: #ffffff">
+            a
+          </div>
+          <div class="color" style="background-color: #ffffff; color: #2a2a2a">
+            a
+          </div>
+          <div class="color" style="background-color: #63ff03; color: #2a2a2a">
+            a
+          </div>
+          <div class="color" style="background-color: #ee0073; color: #ffffff">
+            a
+          </div>
+        </div>
+      </div>
+
+      <button class="save">save</button>
+      <div class="settings-container">
+      </div>
+    </section>
+
+    <textarea class="output">
+The quick brown fox jumped on the lazy dog</textarea
+    >
+    <script src="app.js"></script>
+  </body>
+</html>

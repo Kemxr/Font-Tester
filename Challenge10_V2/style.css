@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "NeueMontreal";
+  font-weight: 600;
+  src: url(assets/NeueMontreal-Bold.woff2);
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  font-weight: 400;
+  src: url(assets/NeueMontreal-Regular.woff2);
+}
+
+@font-face {
+  font-family: "NeueMontreal";
+  font-weight: 200;
+  src: url(assets/NeueMontreal-Light.woff2);
+}
+
+body {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  display: flex;
+  overflow-y: hidden;
+  font-family: "NeueMontreal", sans-serif;
+  margin: 0;
+}
+
+.options {
+  background-color: #2a2a2a;
+  border-right: 4px solid #575757;
+  color: #ffffff;
+  height: 100vh;
+  left: 0;
+  padding: 32px;
+  top: 0;
+  width: 280px;
+}
+
+.options h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 40px 0;
+}
+
+.option {
+  margin-bottom: 1.5rem;
+}
+
+.option label {
+  line-height: 2;
+}
+
+.option label span {
+  float: right;
+}
+
+.option input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.option.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.option.checkbox input {
+  width: auto;
+}
+
+select {
+  height: 2rem;
+  width: 100%;
+}
+
+input[type="text"] {
+  background-color: #575757;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 0.5rem;
+}
+
+input[type="text"]::placeholder {
+  color: #838383;
+}
+
+.colors {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colors > div {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  height: 2rem;
+  line-height: 1.8;
+  text-align: center;
+  width: 2rem;
+}
+
+.setting {
+  background-color:rgba(255, 255, 255, 0.25);
+  border: .5px dashed white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: .5rem;
+}
+
+.setting:hover {
+  background-color:rgba(255, 255, 255, 0.50);
+}
+
+.output {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: "NeueMontreal";
+  font-size: 4rem;
+  outline: none;
+  padding: 2rem;
+  width: calc(100vw - 280px);
+}
